@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        h1{
+            font: normal 25pt Arial;
+        }
+        input{
+            padding: 10pt;
+        }
+    </style>
+    <title>Antes e Depois</title>
+</head>
+<body>
+    <h1><strong>Antes e depois</strong></h1>
+    <input type="button" value="Antecessor e Sucessor" onclick="verificar()">
+    <script>
+        function verificar(){
+            var num = Number.parseInt(window.prompt('Digite um número inteiro qualquer!'))
+            var a = num - 1
+            var d = num + 1
+            window.alert(`Antes de ${num} vem o número ${a}.\nDepois de ${num} vem o número ${d}\n`)
+
+        }
+    </script>
+    <script src="d003.js"></script>
+</body>
+</html>
