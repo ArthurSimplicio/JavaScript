@@ -1,4 +1,5 @@
-var escolha = Number(prompt("Escolha uma operação:\n1 - Soma (+)\n2 - Subtração (-)\n3 - Multiplicação (*)\n4 - Divisão real (/)\n5 - Divisão inteira (%)\n6 - Potenciação (**)"))
+function calculadora(){
+    var escolha = Number(prompt("Escolha uma operação:\n1 - Soma (+)\n2 - Subtração (-)\n3 - Multiplicação (*)\n4 - Divisão real (/)\n5 - Divisão inteira (%)\n6 - Potenciação (**)"))
 let n1 = Number(prompt('Insira o primeiro valor:'))
 let n2 = Number(prompt('Insira o segundo valor:'))
 let resultado
@@ -50,7 +51,7 @@ if(!escolha || escolha >= 7){
         }
     }
     
-    if (escolha == 1){
+    /*if (escolha == 1){
         soma()
     }else if(escolha == 2){
         subtração()
@@ -62,8 +63,30 @@ if(!escolha || escolha >= 7){
         divisaoInteira()
     }else if(escolha == 6){
         potenciaçao()
+    }*/
+
+    switch(escolha) {
+        case 1:
+            soma()
+            break
+        case 2:
+            subtração()
+            break
+        case 3:
+             multiplicaçao()
+             break
+         case 4:
+            divisaoReal()
+            break
+        case 5:
+            divisaoInteira()
+        case 6:
+            potenciaçao()
+            break
     }
 }
+}
+
 calculadora()
 
 
